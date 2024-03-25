@@ -34,4 +34,14 @@ body
   margin: 0 auto;
   padding: 5px 20px;
 }
+/* Dodajemo stilove za mobilne uređaje */
+@media only screen and (max-width: 600px) {
+  body {
+      height: auto; /* Uklanjamo fiksnu visinu tijela */
+      background-attachment: scroll; /* Omogućavamo klizanje pozadine */
+  }
 
+  .bojan {
+      max-width: 90%; /* Smanjujemo maksimalnu širinu sadržaja za bolje prilagođavanje mobilnim ekranima */
+  }
+}
