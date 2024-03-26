@@ -1,28 +1,13 @@
-/* Osnovni stilovi */
-body {
+.container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh; /* Postavlja visinu na 100% visine prozora */
-    background-image: url(../images/1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.naslov {
-    text-align: center;
-    text-decoration: underline;
-    text-transform: uppercase;
 }
 
 .bojan {
-    background-image: url(../images/2.webp);
     background-size: cover;
     background-attachment: fixed;
     background-clip: padding-box;
     color: #000000;
-    text-align: center;
     border: 1px solid #e74c3c;
     border-radius: 20px;
     padding: 5px 20px;
@@ -30,13 +15,8 @@ body {
     margin: 20px;
 }
 
-/* Prilagodba za mobilne uređaje */
 @media only screen and (max-width: 600px) {
-    body {
-        flex-direction: column; /* Postavlja elemente u jedan stupac */
-    }
-
     .bojan {
-        max-width: 90%; /* Smanjuje maksimalnu širinu sadržaja za bolje prilagođavanje mobilnim ekranima */
+        max-width: 90%;
     }
 }
