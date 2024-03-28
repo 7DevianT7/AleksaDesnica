@@ -1,50 +1,83 @@
-body
- {
-  display: flex;
-  justify-content:center ; 
-  align-items: center;
-  height:1500px; 
-  background-image:url(../images/1.jpg) ;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+.practice3 {
+    padding: 30px 0;
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1owumYtP7EBjEMW_rcdNaQVcKiCw5Nw4eSA&usqp=CAU") ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profile-info {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    gap: 30px;
+    padding: 50px;
+    max-width: 600px;
+    margin: 0px auto;
+    box-shadow: 0px 0px 4px 0px silver;
 
 }
 
-.naslov {
-  text-align: center;
-  text-decoration:underline;
-  text-transform: uppercase;
+.profile-photo {
+    width: 100%;
+    max-width: 250px;
+
 }
 
-.bojan {
-  background-image: url(../images/2.webp);
-  background-size: cover;
-  background-attachment: fixed;
-  background-clip: padding-box;
-  flex-grow: 1; 
-  color: #000000;
-  text-align: center;
-  border: 1px solid #e74c3c;
-  border-radius: 20px;
-  max-width: 80%;
-  max-height: min-content;
-  overflow-y: auto; 
-  margin: 0 auto;
-  padding: 5px 20px;
+.profile-photo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-/* Dodajemo stilove za mobilne uređaje */
-@media only screen and (max-width: 600px) {
-  body {
-      height: auto; /* Uklanjamo fiksnu visinu tijela */
-      background-attachment: scroll; /* Omogućavamo klizanje pozadine */
-  }
-
-  .bojan {
-      max-width: 90%; /* Smanjujemo maksimalnu širinu sadržaja za bolje prilagođavanje mobilnim ekranima */
-  }
+.profile-text {
+    width: 100%;
+    max-width: 450px;
 }
 
+.badge {
+    background-color: #088ae0;
+    display: inline-block;
+    color: white;
+    padding: 10px 15px;
+    font-weight: 700;
+    border-radius: 5px;
+}
 
+.heading {
+    font-size: 32px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.subheading {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #577ca1;
+}
+
+.profile-text p {
+    line-height: 1.5;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-button {
+    display: inline-block;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-right: 5px;
+    border-radius: 5px;
+
+}
+
+.social-button-fb {
+    background-color: #34495e;
+}
+
+.social-button-ln {
+    background-color:#2980b9;
+}
